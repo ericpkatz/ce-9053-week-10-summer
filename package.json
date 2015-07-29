@@ -1,0 +1,26 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "- npm init - install express, jade, nodemon - set up an express application - create .bowerrc (for controlling directory of vendor files) - install bootstrap, angular, angular-route - create a static route to serve vendor files - create app.js - to create angular application - create our first angular controller - creating angular routes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericpkatz/ce-9053-week-10-summer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericpkatz/ce-9053-week-10-summer/issues"
+  },
+  "homepage": "https://github.com/ericpkatz/ce-9053-week-10-summer",
+  "dependencies": {
+    "express": "^4.13.1",
+    "jade": "^1.11.0",
+  },
+  "devDependencies": {
+    "nodemon": "^1.4.0"
+  }
+}
