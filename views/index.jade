@@ -14,4 +14,17 @@ html
         
             .well Welcome to My World {{ 5*5*5 }}
             
+            .alert.alert-warning
+                div(ng-controller="MyCtrl") {{ name }}
+                    form.form
+                        div.form-group
+                            label Name
+                            input.form-control(ng-model="name")
+            .alert.alert-warning
+                div(ng-controller="MyCtrl") {{ name }}
+                    form.form
+                        div.form-group
+                            label Name
+                            input.form-control(ng-model="name")
+            
             
