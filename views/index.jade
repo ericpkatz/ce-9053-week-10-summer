@@ -1,7 +1,9 @@
 html
     head
         link(rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css")
-    body
+        script(src="/vendor/angular/angular.js")
+        script(src="/app/app.js")
+    body(ng-app="myWorld")
         ul.nav.nav-tabs
             li
                 a(href="/") Home
@@ -10,4 +12,6 @@ html
                 
         .container
         
-            .well Welcome to My World
+            .well Welcome to My World {{ 5*5*5 }}
+            
+            
