@@ -1,5 +1,5 @@
 <ul class="list-group">
-    <li class="list-group-item">Rock</li>
-    <li class="list-group-item">Paper</li>
-    <li class="list-group-item">Scissors</li>
+    <li class="list-group-item" ng-repeat="thing in things | orderBy:'name'" ng-click="remove(thing)">
+        {{thing.name}}
+    </li>
 </ul>

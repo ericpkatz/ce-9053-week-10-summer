@@ -1,5 +1,5 @@
 <ul class="list-group">
-    <li class="list-group-item">Moe</li>
-    <li class="list-group-item">Larry</li>
-    <li class="list-group-item">Curly</li>
+    <li class="list-group-item" ng-repeat="person in people">{{ person.name }}
+        <label class="label" ng-class="{'label-success' : person.active, 'label-warning': !person.active}">{{ person.active }}</label>
+    </li>
 </ul>
