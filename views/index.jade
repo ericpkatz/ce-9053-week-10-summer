@@ -2,6 +2,7 @@ html
     head
         link(rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css")
         script(src="/vendor/angular/angular.js")
+        script(src="/vendor/angular-route/angular-route.js")
         script(src="/app/app.js")
     body(ng-app="myWorld")
         ul.nav.nav-tabs
@@ -9,22 +10,12 @@ html
                 a(href="/") Home
             li
                 a(href="/things") Things 
+            li
+                a(href="/people") People 
                 
         .container
         
             .well Welcome to My World {{ 5*5*5 }}
             
-            .alert.alert-warning
-                div(ng-controller="MyCtrl") {{ name }}
-                    form.form
-                        div.form-group
-                            label Name
-                            input.form-control(ng-model="name")
-            .alert.alert-warning
-                div(ng-controller="MyCtrl") {{ name }}
-                    form.form
-                        div.form-group
-                            label Name
-                            input.form-control(ng-model="name")
-            
+            div(ng-view)
             
